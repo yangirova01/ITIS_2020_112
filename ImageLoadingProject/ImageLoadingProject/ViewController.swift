@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     enum Row {
         case image(title: String, urlString: String)
-        case largeImage(title: String, urlString: String)
+        case largeImage(title: String, previewUrlString: String, urlString: String)
     }
 
     private var rows: [Row] = [
@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ),
         .largeImage(
             title: "Large satellite photo",
+            previewUrlString: "https://ichef.bbci.co.uk/news/976/cpsprodpb/F3BC/production/_113769326_1.jpg",
             urlString: "https://www.dropbox.com/s/vylo8edr24nzrcz/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg?dl=1"
         )
     ]
